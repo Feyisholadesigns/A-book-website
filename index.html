@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <title>My First Bootstrap Project</title>
+  <style>
+    section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar--->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-xxl">
+      <a href="#intro" class="navbar-brand">
+        <i class="bi bi-book-half"></i>
+        <span class="fw-bolder text-dark">Colleen Hoover - Books</span>
+      </a>
+      <!--toogle button for mobile nav--->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!---nav bar links-->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#topics">About The Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Get in Touch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#others">Collections</a>
+          </li>
+
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-dark" href="#others">Read Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!---main images & intro text-->
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+            <div class="display-21">COLLEEN HOOVER</div>
+            <div class="display-5 text-muted">Book Series</div>
+          </h1>
+          <p class="lead my-4 text-muted">
+            "Love's journey, told through words,tears,and triumphs"
+          </p>
+          <a href="#others" class="btn btn-outline-dark btn-lg">Read Now</a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <img class="img-fluid w-50" src="images/7f1830e974f1b1193347a887984078bd.jpg" alt="my picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--More books--->
+  <section id="others" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Books By the Author</h2>
+        <p class="lead text-muted">Read and Enjoy For Free!!</p>
+        <p class="lead text-muted">Click on the read now button to start reading....</p>
+      </div>
+      <div class="row my-5 justify-content-center">
+        <div class="col-8 col-lg-4 col-sm-4 col-xl-3">
+          <div class="card border-dark border-2">
+            <div class="card-body text-center">
+              <img src="./images/7f1830e974f1b1193347a887984078bd.jpg" class="w-75">
+              <a href="./images/It-Ends-with-Us.pdf" class="btn btn-outline-dark btn-sm mt-2">Read Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 col-lg-4 col-sm-4 col-xl-3">
+          <div class="card border-dark border-2">
+            <div class="card-body text-center">
+              <img src="./images/7fe7e23b6b9bb003200df1129c660854.jpg" class="w-75">
+              <a href="./images/Ugly-Love.pdf" class="btn btn-outline-dark btn-sm mt-2">Read Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 col-lg-4 col-sm-4 col-xl-3">
+          <div class="card border-dark border-2">
+            <div class="card-body text-center">
+              <img src="./images/0f2c473510d4e71ec357edb82e3eaca4.jpg" class="w-75">
+              <a href="./images/november.pdf" class="btn btn-outline-dark btn-sm mt-2">Read Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--content of the books-->
+  <section id="topics">
+    <div class="container-md">
+      <div class="text-center">
+        <h2>Summaries Of The Books</h2>
+        <p class="lead  text-muted">A quick glance of what the books entails...</p>
+      </div>
+      <div class="row my-5 g-5 align-items-center">
+        <div class="col-6 col-lg-4">
+          <img src="images/0b9b74d74483729c34cecdf66a648cc6.jpg" class="w-75 img-fluid" alt="pic">
+        </div>
+        <div class="col-lg-6">
+          <!--accordion-->
+          <div class="accordion" id="summaries">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#summary-1" aria-expanded="true" aria-controls="summary-1">
+                  Storyline - It Ends With Us
+                </button>
+              </h2>
+              <div id="summary-1" class="accordion-collapse collapse " aria-labelledby="heading-1"  data-bs-parent="#summaries">
+                <div class="accordion-body">
+                  <p>Lily Bloom moves to Boston to chase her lifelong dream ofopening her own business. A chance meeting with charming neurosurgeon Ryle Kincaid soon sparks an intense connection,but as the two fall deeply in love, she begins to see sides of Ryle that remind her of her parents' relationship.</p>
+                  <p> When Lily's first love, Atlas Corrigan, suddenly reenters her life, her relationship with Ryle gets upended, leaving her with an impossible choice.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#summary-2" aria-expanded="true" aria-controls="summary-2">
+                  Storyline - Ugly Love
+                </button>
+              </h2>
+              <div id="summary-2" class="accordion-collapse collapse " aria-labelledby="heading-2"  data-bs-parent="#summaries">
+                <div class="accordion-body">
+                  <p>Ugly Love is one of Colleen Hoover's most noteworthy releases. This story follows Tate, a woman who falls for a distraught and reticent man named Miles. When these two  souls meet, their connection is undeniable. However, Miles  is a broken man and he cannot offer Tate anything other than  a physical relationship.</p>
+                  <p> Miles sees Rachel with her beautiful hair and eyes.  instantly falls in love with her and texts Ian that she's  going to have his children. In an unfortunate twist, Miles  and Rachel find out their parents are planning to marry each other.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#summary-3" aria-expanded="true" aria-controls="summary-3">
+                  Storyline - November
+                </button>
+              </h2>
+              <div id="summary-3" class="accordion-collapse collapse " aria-labelledby="heading-3"  data-bs-parent="#summaries">
+                <div class="accordion-body">
+                  <p>November 9th by Colleen Hoover is a novel about the complicated relationship between Fallon and Ben, and how it's affected by each year's great or tragic events.</p>
+                  <p> The story follows the two as they meet the day before Fallon  is scheduled to move cross-country, and their attraction  leads them to spend her last day in Los Angeles together.   Ben uses Fallon's life as inspiration for his novel, and  they continue to meet on the same date each year. However,  Fallon becomes unsure if Ben has been telling her the truth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--contact form-->
+  <!--form-control,form-label,form-select,input-group-text--->
+  <section id="contact">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Get In Touch With Us</h2>
+        <p class="lead">
+          You've got questions? fill out the form to contact us directly...
+        </p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form onsubmit="handleSubmit(event)" id="feedbackForm">
+            <label for="Email" class="form-label">Email Adress</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="e.g.shola@example.com" required>
+              
+            </div>
+            <label for="name" class="form-label">Name</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots-fill"></i>
+              </span>
+              <input type="text" class="form-control" id="name" placeholder="e.g.Feyishola" required>
+            </div>
+            <label for="subject" class="form-label">What Message Are You Sending!!</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+              </span>
+              <select class="form-select" id="subject">
+                <option value="Feedback">Feedback</option>
+                <option value="question">Question?</option>
+              </select>
+            </div>
+
+            <div class="form-floating mb-4 mt-5">
+              <textarea id="Feedback" class="form-control" style="height: 140px" required></textarea>
+              <label for="Feedback">Your Feedback or Questions....</label>
+            </div>
+
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-dark" >Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"  crossorigin="anonymous"></script>
+    <script>
+       function handleSubmit(event){
+        event.preventDefault();
+        alert("Thank you For your Feedback!");
+        localStorage.setItem('scrollPos', 0);
+        window.location.reload();
+       }
+       window.onload = function () {
+        if (localStorage.getItem('scrollPos')) {
+          window.scrollTo(0, 0);
+          localStorage.removeItem('scrollPos');
+        }
+       }
+    </script>
+</body>
+
+</html>
